@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>림 서버 문서</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #f0f2f5;
+        }
+        nav {
+            background-color: #fff;
+            padding: 20px;
+            width: 220px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-y: auto;
+            transition: all 0.3s;
+        }
+        main {
+            margin-left: 240px;
+            padding: 20px;
+            flex-grow: 1;
+            min-height: 100vh;
+        }
+        a {
+            color: #0078d7;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin: 5px 0;
+            transition: background 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #e1e9f2;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #0078d7;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+                top: 0;
+                box-shadow: none;
+            }
+            main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">섭장은 허접이다</a>
+        <a href="#article1">알려진 문제</a>
+        <a href="#article2">자주 묻는 질문</a>
+        <a href="#article3">서버에 안들어가져요</a>
+        <a href="#article4">이 서버는 언제든 닫힐 수 있다</a>
+        <a href="#article5">서버 사양</a>
+        <a href="#article6">모드 위키</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>섭장은 허접이다</h2>
+            <p>서버를 열긴 했는데 사실 섭장은 림월드 30시간 정도 해본 쌉뉴비임 그렇다보니 많이 허접할거야</p>
+            <p>많아봐야 4~5면 들어오겠지 했는데 많이 들어와서 굉장히 당황중</p>
+            <p>그 점 참고해주면 좋겠고 이 문서는 계속 업데이트 될 예정</p>
+        </section>
+        <section id="article1">
+            <h2>알려진 문제(발생할 수도 있고 아닐 수도 있음)</h2>
+            <p>1 : 정착지 생성 후 이벤트가 발생안함</p>
+            <p>2 : 다른 유저 습격 불가능</p>
+            <p>3 : 다은 유저와 거래를 위해 상단을 구성해 보냈지만 거래 후 상단이 고아가 됨</p>
+            <p>4 : 림들이 갑자기 안움직임(이건 그냥 재접하면 사라짐)</p>
+        </section>
+        <section id="article2">
+            <h2>자주 묻는 질문</h2>
+            <p>Q1 멀티 서버면 배속이나 그런건 어떻게 처리됨?</p>
+            <p>A1 각자 개인으로 진행되는 비동기식임 유저간 상호작용이 필요할때만 서버랑 통신해서 배속이 제한되고 싱크되는듯</p>
+            <p>ㅤ</p>
+            <p>Q2 내가 나갔을 때 다른 사용자가 습격 올 수도 있음?</p>
+            <p>A2 ㅇㅇ 너의 마지막 데이터를 사본으로 불러와서 진행됨 오프라인일때 방어를 위한 장치들도 있으니 여기말고 모드 위키 17번 확인해보셈</p>
+            <p>ㅤ</p>
+            <p>Q3 이 버튼은 뭐임? 저 버튼은 뭐임?</p>
+            <p>A3 모드 위키 확인해봐 앵간해선 다 적혀있음</p>
+            <p>ㅤ</p>
+            <p>Q4 동맹 있음?</p>
+            <p>A4 ㅇㅇ 지도에서 자신을 누른다음 팩션 메뉴로 가면 팀 만들기 가능 만들고 다른유저 정착지 클릭해서 팩션 메뉴 누르면 초대 가능</p>
+            <p>ㅤ</p>
+            <p>Q5 동맹으로 뭐함?</p>
+            <p>A5 동맹을 하면 지도상에서 색이 달라지고 transfer이라는 동맹간 순간이동 기계가 언락되며 사이트 라는걸 만들수있게됨 자세한건 모드 위키 13번으로</p>
+            <p>ㅤ</p>
+            <p>Q6 정착지 개망했는데 어떻함</p>
+            <p>A6 esc 누르면 세이브 지우기 있음 누르고 나갔다 다시 들어오면 초기화됨</p>
+            <p>ㅤ</p>
+            <p>Q7 글로벌 마켓 어케씀?</p>
+            <p>A7 통신기 만들어야함 그 후에 가능</p>
+            <p>ㅤ</p>
+            <p>Q8 섭장은 어디서 뭐함?</p>
+            <p>A8 섭장인거 티내기 싫어서 조용히 다른 이름으로 똑같이 플레이중 굳이 찾아낼려고 하지마셈 부끄러움</p>
+            <p>ㅤ</p>
+            <p>Q9 가끔씩 게임이 잠깐 멈칫함 서버렉임?</p>
+            <p>A9 대부분의 경우는 너 맵 세이브해서 서버로 보내는중인거임 그때 잠깐 멈칫하는거니 이해바람</p>
+            <P>ㅤ</P>
+            <p>Q10 복구 불가능한 ㅈ버그 걸린듯 어떻함</p>
+            <p>A10 진짜 정말 미안하지만 나도 해결 방법을 모름 림쌉뉴비에다가 이 모드 자체도 안정된게 아니기도 하고 풀린 정보가 너무 없음 아마 도움을 못줄거임 새로 시작하는수밖에ㅠ</p>
+            <p>ㅤ</p>
+            <p>Q11 서버에 악질 새끼 있는데 어떻함</p>
+            <p>A11 그냥 PVP졌다고 그러는건 안받아줌 앵간해선 관여 안할텐데 분탕이나 누가 봐도 저새끼 쫌 아닌데 싶은놈은 디코 s_shark__ 로 개인 dm바람 로그 확인후 밴때리겠음</p>
+            <p>ㅤ</p>
+            <p>Q12 서버 채팅 어디있음</p>
+            <p>A12 오른쪽 하단 메시지 아이콘</p>
+            <p>ㅤ</p>
+            <p>Q13 서버 언제 닫음?</p>
+            <p>A13 예정대로라면 24년 10월 13일 꺼짐 구글 클라 무료가 딱 거기까지임 중간에 더이상 지속할 이유가 없다 판단되면 도중에 닫을수도 있음</p>
+
+        </section>
+        <section id="article3">
+            <h2>서버에 안들어가져요(지금까지 나온 에러 로그들)</h2>
+            <p>에러 : 모드 버전이 틀리다</p>
+            <p>이유 : 멀티 모드가 업데이트 되서 서버가 구버전이 되버린것임 확인 후 업뎃할테니 기다려주셈</p>
+            <p>ㅤ</p>
+            <p>에러 : 모드 미스매치</p>
+            <p>이유 : 너의 클라 모드가 서버랑 다름 모드는 투게더 모드와 하모니만 허용됨 다른 모드 넣으면 안들어와짐</p>
+            <p>ㅤ</p>
+            <p>에러 : 타임아웃</p>
+            <p>이유 : 버그든 그냥 섭종이든 모종의 이유로 서버가 닫혔을때 뜸</p>
+            <p>ㅤ</p>
+        </section>
+        <section id="article4">
+            <h2>이 서버는 언제든 닫힐 수 있다</h2>
+            <p>뭐 그냥 심심할때 닫겠다 이게 아니라 모종의 이유로 서버에 복구 불가능한 버그가 생기거나 더이상 열고 있을 이유가 없을때 닫겠다는 말임</p>
+            <p>큰 문제 없으면 3개월 뒤에 닫겠지만 안정성이 검증된 모드가 아니기도 하고 림지식 부족 문제로 버그 생기면 쩔수없이 닫을수도 있음</p>
+            <P>그거 감안하고 당장 내일 닫을수도 있으니깐 가볍게 플레이해줘</P>
+        </section>
+        <section id="article5">
+            <h2>서버 사양(GCP)</h2>
+            <p>OS : 우분투</p>
+            <p>cpu : 2 core</p>
+            <p>ram : 16gb</p>
+        </section>
+        <section id="article6">
+            <h2>모드 위키</h2>
+            <a href="https://rimworldtogether.github.io/Guide/index.html"target="_blank">모드 위키</a>
+        </section>
+    </main>
+</body>
+</html>
